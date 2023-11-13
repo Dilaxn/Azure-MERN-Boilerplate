@@ -1,68 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# redux-toolkit-todo
 
-## Available Scripts
+[Demo](https://redux-toolkit-todo.onrender.com/)
 
-In the project directory, you can run:
+# redux toolkit's role in this project
 
-### `yarn start`
+    State Management: Redux Toolkit manages the application's state, including data related to tasks, their statuses, and priorities. This state is stored centrally and can be accessed and updated from various components.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    Reducers and Actions: Redux Toolkit defines reducers and actions using a more streamlined syntax. The createSlice function is used to create reducers and actions, reducing boilerplate code and improving readability.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    Action Creators: Redux Toolkit automatically generates action creators for each action, eliminating the need to write these functions manually. This simplifies the process of dispatching actions.
 
-### `yarn test`
+    Immutability: Redux Toolkit enforces immutability when updating the state. It ensures that state changes are made in an immutable way, making it easier to track and debug issues.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Redux Store Configuration: Redux Toolkit simplifies the configuration of the Redux store. It provides a configureStore function, which sets up the store with sensible defaults and middleware such as Thunk.
 
-### `yarn build`
+    Middleware: Middleware, such as Thunk, is used for handling asynchronous actions. Redux Toolkit makes it easy to integrate and configure middleware as needed.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    DevTools Integration: Redux Toolkit supports the integration of browser devtools, making it easier to debug the state and actions in the application.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    Performance Optimizations: Redux Toolkit includes performance optimizations, such as memoized selectors, to avoid unnecessary re-renders and computations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Data Normalization: It simplifies data normalization techniques, allowing you to structure your data efficiently for the application.
 
-### `yarn eject`
+## Table of Contents
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Introduction
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Welcome to redux-toolkit-todo! This project is a simple todo app which i uised to learn redux toolkit. It is designed it simply to add tasks with simple UI(like paper pencil).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Thank you for the Intervest Software Technologies for given the task.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+redux-toolkit-todo is a powerful task management application with a wide range of features designed to streamline your daily tasks and keep you organized. Some of its key features include:
 
-### Code Splitting
+    Task Creation: Easily create and manage tasks with a user-friendly interface.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    Task Prioritization: Assign priority levels (Critical or Normal) to your tasks to focus on what matters most.
 
-### Analyzing the Bundle Size
+    Deadline Management: Set deadlines for your tasks with Date & time.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    Task Status: Track the status of your tasks (Active or Completed) for a clear overview of your progress.
 
-### Making a Progressive Web App
+    Filtering: Quickly filter tasks by status (All, Active, or Completed) for efficient task management.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+    Drag-and-Drop Reordering: Organize your tasks by dragging and dropping them to change their order.
 
-### Advanced Configuration
+    Clear All Tasks: Remove completed tasks and declutter your to-do list in one click.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+    Intuitive User Interface: redux-toolkit-todo features an intuitive, user-friendly interface for a seamless user experience.
 
-### Deployment
+    Error Handling: Receive instant feedback and error messages to help resolve issues efficiently.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+    Local Storage: Store your tasks and settings in local storage for easy retrieval.
 
-### `yarn build` fails to minify
+    Toast Notifications: Toast notifications provide real-time feedback on actions, such as successful task creation or priority changes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    Responsiveness: [Your Project Name] is responsive and adapts to different screen sizes, making it accessible on a variety of devices, from desktop computers to mobile phones.
+
+    Unit test: Did simple tests
+
+## Installation
+
+Make sure you installed Git, Node.js in your computer
+
+```bash
+# Clone the repository
+git clone https://github.com/Dilaxn/redux-toolkit-todo.git
+
+# Change directory to the project folder
+cd redux-toolkit-todo
+
+# Install dependencies
+npm install
+
+# Start the project
+npm start or (npm install -g serve && serve -s build)
+
+# Test commands
+npm test
+```
+
+## Usage
+
+![Screenshot](./src/assets/screenshots/Screenshot%202023-11-03%20at%2012.18.05.png)
+![Screenshot](./src/assets/screenshots/Screen%20Shot%202023-11-03%20at%2002.30.37.png)
+![Screenshot](./src/assets/screenshots/Screenshot%202023-11-03%20at%2011.51.45.png)
+![Screenshot](./src/assets/screenshots/Screen%20Shot%202023-11-03%20at%2002.29.48.png)
+![Screenshot](./src/assets/screenshots/Screenshot%202023-11-03%20at%2002.31.16.png)
+
+Thank you.
