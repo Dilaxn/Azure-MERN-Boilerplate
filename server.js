@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // app.use(express.static("./client/build"));
-app.use("test", (req, res) => {
+app.use("/test", (req, res) => {
   res.send("test");
 });
 app.use("/api/data", require("./routes/new-index.js"));
